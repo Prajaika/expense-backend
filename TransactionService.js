@@ -8,6 +8,9 @@ const con = mysql.createConnection({
     database: process.env.DB_DATABASE || dbcreds.DB_DATABASE
 });
 
+
+
+
 function addTransaction(amount, desc) {
     if (!amount || isNaN(Number(amount))) {
         console.error("Invalid or empty amount provided.");
