@@ -10,7 +10,6 @@ const con = mysql.createConnection({
 
 
 
-
 function addTransaction(amount, desc) {
     if (!amount || isNaN(Number(amount))) {
         console.error("Invalid or empty amount provided.");
